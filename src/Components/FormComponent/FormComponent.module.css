@@ -1,0 +1,76 @@
+.form{
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.075) 0px 2px 5px -1px, rgba(0, 0, 0, 0.041) 0px 1px 3px -1px;
+    display: flex;
+    flex-direction: column;
+} 
+
+.form > * + * {
+    margin-top: 1rem;
+}
+
+.input{
+    border: 0;
+    background: rgb(239, 239, 239);
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: rgb(98, 98, 98);
+}
+
+.input:focus{
+    outline-color: #bdddfb;
+}
+
+.inputError{
+    border: solid 2px #fca1a1;
+    outline-color: #fca1a1 !important;
+}
+
+.error{
+    margin: 0;
+    color: #fd6161;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.radioGroup{
+    display: flex;
+    align-items: center;
+    margin: 10px 0 0 0;
+}
+
+.radioTitle{
+    margin: 0;
+    margin-right: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.radioLabel{
+    font-size: 0.8rem;
+    margin: 0 5px;
+}
+
+.button{
+    border: 0;
+    background-color: #E0E7FE;
+    color: #587df9;
+    font-weight: 700;
+    padding: 0px 22px;
+    border-radius: 8px;
+    width: 150px;
+    margin-left: auto;
+}
+
+.button:hover{
+    background-color: #c3d0fc;
+    color: #587df9;
+}
+
+.button:focus{
+    background-color: #c3d0fc;
+    color: #587df9;
+}

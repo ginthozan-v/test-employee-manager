@@ -1,0 +1,42 @@
+export const EmployeeData = [
+  {
+    id: "1",
+    firstName: "Chalsey",
+    lastName: "Dietrich",
+    email: "chalsey@gmail.com",
+    phone: "+6592345678",
+    gender: "female",
+  },
+  {
+    id: "2",
+    firstName: "Leanne",
+    lastName: "Graham",
+    email: "leanne@gmail.com",
+    phone: "+6592345678",
+    gender: "female",
+  },
+  {
+    id: "3",
+    firstName: "Ervin",
+    lastName: "Howell",
+    email: "ervin@gmail.com",
+    phone: "+6592345678",
+    gender: "male",
+  },
+  {
+    id: "4",
+    firstName: "Clementine",
+    lastName: "Bauch",
+    email: "clementine@gmail.com",
+    phone: "+6592345678",
+    gender: "female",
+  },
+  {
+    id: "5",
+    firstName: "Patricia",
+    lastName: "Lebsack",
+    email: "patricia@gmail.com",
+    phone: "+6592345678",
+    gender: "female",
+  },
+];

@@ -1,0 +1,25 @@
+{
+    "Employees": {
+      "firstName": {
+        "string": {
+          "minLength": 5,
+          "maxLength": 20
+        }
+      },
+      "lastName": {
+        "string": {
+          "minLength": 5,
+          "maxLength": 20
+        }
+      },
+      "email": {
+        "string": {}
+      },
+      "phone": {
+        "string": {}
+      },
+      "gender": {
+        "string": {}
+      }
+    }
+  }

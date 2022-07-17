@@ -1,0 +1,30 @@
+.section{
+    margin-top: 80px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h1{
+    margin: 0;
+    font-size: 1.5rem;
+    color: rgb(55, 55, 55);
+}
+
+.button{
+    border: 0;
+    background-color: #E0E7FE;
+    color: #587df9;
+    font-weight: 700;
+    padding: 0px 22px;
+    border-radius: 8px;
+}
+
+.button:hover{
+    background-color: #c3d0fc;
+    color: #587df9;
+}
