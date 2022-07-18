@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 
-import Form from "../../Components/FormComponent";
+import Form from "../../components/FormComponent";
 import {
   addEmployee,
   editEmployee,

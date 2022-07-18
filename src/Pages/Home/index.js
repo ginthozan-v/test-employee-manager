@@ -4,12 +4,12 @@ import { Space, Col, Row, Button, Tag } from "antd";
 import { useSelector, useDispatch } from "react-redux";
 import s from "./Home.module.css";
 
-import TableComponent from "../../Components/TableComponent";
+import TableComponent from "../../components/TableComponent";
 import {
   getEmployees,
   removeEmployee,
 } from "../../redux/features/employee/employeeSlice";
-import { EmployeeData } from "../../Data/FakeData";
+import { EmployeeData } from "../../data/FakeData";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -41,7 +41,7 @@ const Home = () => {
       dataIndex: "gender",
       key: "gender",
       render: (_, { gender }) => (
-        <p style={{ textTransform: "capitalize" }}>{gender}</p>
+        <p style={{ textTransform: "capitalize", margin: 0 }}>{gender}</p>
       ),
     },
     {

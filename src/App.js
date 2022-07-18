@@ -1,7 +1,7 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import Header from "./Components/Header";
-import AddEditForm from "./Pages/AddEditForm"
-import Home from "./Pages/Home";
+import Header from "./components/Header";
+import AddEditForm from "./pages/AddEditForm"
+import Home from "./pages/Home";
 
 function App() {
   return (

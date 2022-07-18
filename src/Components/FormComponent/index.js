@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Button, Radio } from "antd";
 import s from "./FormComponent.module.css";
 import { useForm, Controller } from "react-hook-form";
@@ -32,11 +33,26 @@ const FormComponent = ({ formSubmit, initialValue }) => {
     register,
     handleSubmit,
     control,
-    formState: { errors },
+    formState: { errors, dirtyFields },
   } = useForm({
     resolver: yupResolver(schema),
     defaultValues: initialValue,
   });
+
+  const beforeunload = (e) => {
+    // fires when reload the page without saving the changes
+    if (dirtyFields) {
+      e.preventDefault();
+      e.returnValue = true;
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('beforeunload', beforeunload);
+    return () => {
+        window.removeEventListener('beforeunload', beforeunload);
+    }
+  }, [])
 
   const InputComponent = ({ name, placeholder }) => {
     return (
